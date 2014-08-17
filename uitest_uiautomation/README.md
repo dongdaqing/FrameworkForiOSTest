@@ -3,10 +3,10 @@ uitest_uiautomation
 
 ## 目录说明
 
-### config_path
+### doc/config_path
 
 存放tracetemplate文件，通过instruments生成
 
-### doc
+### doc/test_results
 
-存放测试结果，和其他说明文件
+存放测试结果
