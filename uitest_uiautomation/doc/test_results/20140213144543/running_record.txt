@@ -1,0 +1,113 @@
+2014-02-13 06:46:02 +0000 Start: Device Info
+2014-02-13 06:46:02 +0000 Default: Dump Device:
+2014-02-13 06:46:02 +0000 Default:   model: iPod touch
+2014-02-13 06:46:02 +0000 Default:   rect: {"origin":{"x":0,"y":0},"size":{"width":320,"height":480}}
+2014-02-13 06:46:02 +0000 Default:   name: “Test组”的 iPod
+2014-02-13 06:46:02 +0000 Default:   systemName: iPhone OS
+2014-02-13 06:46:02 +0000 Default:   systemVersion: 6.1.3
+2014-02-13 06:46:02 +0000 Pass: Test passed
+2014-02-13 06:46:02 +0000 Start: Cancel Update Info
+2014-02-13 06:46:02 +0000 Debug: target.frontMostApp().alert().cancelButton().tap()
+2014-02-13 06:46:02 +0000 Pass: Test passed
+2014-02-13 06:46:02 +0000 Start: Enter historyPage
+2014-02-13 06:46:03 +0000 Debug: target.frontMostApp().mainWindow().buttons()[0].tap()
+2014-02-13 06:46:05 +0000 Debug: target.frontMostApp().mainWindow().buttons()[2].tap()
+2014-02-13 06:46:05 +0000 Pass: Test passed
+2014-02-13 06:46:05 +0000 Start: Verify in historyPage
+2014-02-13 06:46:06 +0000 Debug: target.frontMostApp().mainWindow().staticTexts()[0].tapWithOptions({tapOffset:{x:"0.05", y:"0.57"}})
+2014-02-13 06:46:06 +0000 Pass: Test passed
+2014-02-13 06:46:06 +0000 Start: Test Login
+2014-02-13 06:46:06 +0000 Debug: target.frontMostApp().tabBar().buttons()[2].tap()
+2014-02-13 06:46:08 +0000 Debug: target.frontMostApp().mainWindow().staticTexts()[0].tap()
+2014-02-13 06:46:10 +0000 Debug: target.frontMostApp().mainWindow().scrollViews()[0].tableViews()[0].cells()[0].textFields()[0].buttons()[0].tap()
+2014-02-13 06:46:12 +0000 Debug: target.frontMostApp().mainWindow().scrollViews()[0].tableViews()[0].cells()[0].textFields()[0].tap()
+2014-02-13 06:46:12 +0000 Debug: target.frontMostApp().keyboard().typeString("306621082")
+2014-02-13 06:46:15 +0000 Debug: target.frontMostApp().mainWindow().scrollViews()[0].tableViews()[0].cells()[1].secureTextFields()[0].tap()
+2014-02-13 06:46:15 +0000 Debug: target.frontMostApp().keyboard().typeString("123456")
+2014-02-13 06:46:17 +0000 Debug: target.frontMostApp().mainWindow().scrollViews()[0].tableViews()[0].groups()[0].buttons()[1].tap()
+2014-02-13 06:46:24 +0000 Pass: Test passed
+2014-02-13 06:46:24 +0000 Start: Test Logout
+2014-02-13 06:46:24 +0000 Debug: target.frontMostApp().tabBar().buttons()[2].tap()
+2014-02-13 06:46:25 +0000 Debug: target.frontMostApp().mainWindow().staticTexts()[0].tap()
+2014-02-13 06:46:26 +0000 Debug: target.frontMostApp().mainWindow().tableViews()[0].buttons()[0].tap()
+2014-02-13 06:46:26 +0000 Debug: target.frontMostApp().alert().defaultButton().tap()
+2014-02-13 06:46:31 +0000 Debug: target.frontMostApp().alert().cancelButton().tap()
+2014-02-13 06:46:37 +0000 Debug: Cannot perform action on invalid element: UIAElementNil from target.frontMostApp().mainWindow().navigationBar().buttons()[1]
+2014-02-13 06:46:37 +0000 Error: Cannot perform action on invalid element: UIAElementNil from target.frontMostApp().mainWindow().navigationBar().buttons()[1]
+2014-02-13 06:46:38 +0000 logElementTree:
+UIATarget "“Test组”的 iPod" {{0, 0}, {320, 480}}
+elements: {
+	UIAApplication "优酷" {{0, 20}, {320, 460}}
+	elements: {
+		UIAWindow "(null)" {{0, 0}, {320, 480}}
+		elements: {
+			UIANavigationBar "设置" {{0, 20}, {320, 44}}
+			elements: {
+				UIAImage "(null)" {{0, 20}, {320, 44}}
+				elements: {
+					UIAImage "(null)" {{0, 0}, {320, 3}}
+				}
+				UIAStaticText "设置" {{139, 29}, {42, 27}}
+				UIAButton "set icon close" {{280, 32}, {35, 20}}
+			}
+			UIATableView "空列表" {{0, 64}, {320, 416}}
+			elements: {
+				UIATableCell "跳过片头/片尾" {{0, 74}, {320, 45}}
+				elements: {
+					UIAStaticText "跳过片头/片尾" {{0, 74}, {320, 45}}
+					UIASwitch "跳过片头/片尾" {{211, 83}, {79, 27}}
+				}
+				UIATableCell "连续播放" {{0, 119}, {320, 45}}
+				elements: {
+					UIAStaticText "连续播放" {{0, 119}, {320, 45}}
+					UIASwitch "连续播放" {{211, 127}, {79, 27}}
+				}
+				UIATableGroup "(null)" {{0, 164}, {320, 1}}
+				UIATableCell "使用2G/3G网络" {{0, 175}, {320, 46}}
+				elements: {
+					UIAStaticText "使用2G/3G网络" {{0, 175}, {320, 46}}
+					UIASwitch "使用2G/3G网络" {{211, 184}, {79, 27}}
+				}
+				UIATableGroup "允许在2G/3G网络下缓存视频" {{0, 221}, {320, 26}}
+				elements: {
+					UIAElement "允许在2G/3G网络下缓存视频" {{20, 229}, {156, 15}}
+				}
+				UIATableGroup "(null)" {{0, 257}, {320, 1}}
+				UIATableCell "意见反馈" {{0, 268}, {320, 45}}
+				elements: {
+					UIAStaticText "意见反馈" {{0, 268}, {320, 45}}
+				}
+				UIATableCell "给我评分" {{0, 313}, {320, 44}}
+				elements: {
+					UIAStaticText "给我评分" {{0, 313}, {320, 44}}
+				}
+				UIATableCell "功能介绍" {{0, 357}, {320, 45}}
+				elements: {
+					UIAStaticText "功能介绍" {{0, 357}, {320, 45}}
+				}
+				UIATableGroup "(null)" {{0, 402}, {320, 1}}
+				UIAImage "setting_logo.png" {{102, 423}, {76, 16}}
+				UIAStaticText "V3.2.1" {{184, 423}, {35, 15}}
+			}
+		}
+		UIAWindow "(null)" {{0, 0}, {320, 480}}
+		UIAWindow "(null)" {{0, 0}, {320, 480}}
+		elements: {
+			UIAStatusBar "(null)" {{0, 0}, {320, 20}}
+			elements: {
+				UIAElement "iPod" {{4, 0}, {25, 20}}
+				UIAElement "Wi-Fi 信号强度：2 格（共 3 格）" {{34, 0}, {20, 20}}
+				UIAElement "14:46" {{142, 0}, {36, 20}}
+				UIAElement "电池电量：100%, 使用交流电源" {{296, 0}, {21, 20}}
+			}
+			UIAImage "(null)" {{0, 20}, {2.5, 2.5}}
+			UIAImage "(null)" {{317.5, 20}, {2.5, 2.5}}
+			UIAImage "(null)" {{0, 477.5}, {2.5, 2.5}}
+			UIAImage "(null)" {{317.5, 477.5}, {2.5, 2.5}}
+		}
+	}
+}
+
+2014-02-13 06:46:38 +0000 Fail: Test failed
+Instruments Trace Complete (Duration : 50.723587s; Output : /Users/dongdaqing/SVN/MobileTest/AutomatedTesting/iOS/FrameworkForiOSTest/uitest_results/Trace.trace)
+
